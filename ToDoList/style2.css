@@ -1,0 +1,122 @@
+/* Define CSS variables for easy customization */
+:root {
+    --primary-color: #007bff;
+    --primary-color-dark: #0056b3;
+    --bg-gradient-start: #f0f2f5;
+    --bg-gradient-end: #ffffff;
+    --text-color: #333;
+    --border-color: #e0e0e0;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* A subtle, modern gradient background */
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    font-family: var(--font-family);
+    color: var(--text-color);
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Centered Heading */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for the task input and submit button */
+  .Container {
+    width: 300px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .Container label {
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  /* Stylize the input field */
+  #userInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s;
+  }
+  
+  #userInput:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  /* Modern, rounded submit button */
+  #submit-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #submit-btn:hover {
+    background-color: var(--primary-color-dark);
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  #submit-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Container for displaying tasks */
+  .tsk-container {
+    width: 300px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tsk-container label {
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .tsk-container ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .tsk-container p {
+    font-style: italic;
+    color: #777;
+  }
+  
