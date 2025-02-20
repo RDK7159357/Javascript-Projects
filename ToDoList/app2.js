@@ -27,3 +27,14 @@ document.getElementById('submit-btn').addEventListener('click', function(){
 
 document.addEventListener('DOMContentLoaded',displayTasks)
 })
+
+document.getElementById('delete-btn').addEventListener('click', function () {
+    let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+    if (tasks.length > 0) {
+        tasks.pop(); // Remove last task from array
+        localStorage.setItem('tasks', JSON.stringify(tasks)); // Update localStorage
+
+        displayTasks(); // Re-render task list in the UI
+    }
+});

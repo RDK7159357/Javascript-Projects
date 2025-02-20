@@ -91,6 +91,29 @@
     transform: scale(0.98);
   }
   
+  #delete-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #delete-btn:hover {
+    background-color: var(--primary-color-dark);
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+    transform: scale(1.05);
+  }
+  
+  #delete-btn:active {
+    transform: scale(0.98);
+  }
+  
+
   /* Container for displaying tasks */
   .tsk-container {
     width: 300px;
