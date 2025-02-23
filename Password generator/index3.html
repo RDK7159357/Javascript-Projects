@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="app3.js" defer></script>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #111;
+            color: #fff;
+        }
+
+        .container {
+            width: 360px;
+            padding: 24px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        select, input, button {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        select, input {
+            background: #222;
+            color: #fff;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        select option {
+            color: #000;
+        }
+
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        button {
+            background: #007bff;
+            color: white;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        input[readonly] {
+            background: #222;
+            border: 1px solid #444;
+            cursor: not-allowed;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <select id="strength">
+            <option value="0">Select password strength</option>
+            <option value="1">Weak</option>
+            <option value="2">Medium</option>
+            <option value="3">Strong</option>
+        </select>
+        <input type="number" id="length" placeholder="Password Length" min="4" max="20">
+        <button id="submit-btn">Generate Password</button>
+        <input type="text" id="password" readonly>
+    </div>
+</body>
+</html>

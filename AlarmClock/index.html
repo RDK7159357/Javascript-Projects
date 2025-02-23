@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <script src="app4.js" defer></script>
+</head>
+<body><div>
+    <div class="container">
+        <h1>Alarm Clock</h1>
+        <input type="time" id="alarm" required>
+        <button id="set">Set Alarm</button>
+        <button id="stop">Stop Alarm</button>
+    </div>
+    <audio id="audio" src="sound.mp3" muted></audio>
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #111;
+            color: #fff;
+        }
+
+        .container {
+            width: 360px;
+            padding: 24px;
+            background: #1a1a1a;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        input {
+            background: #222;
+            color: #fff;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        button {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #555;
+        }
+    </style>
+</div>
+    
+</body>
+</html>

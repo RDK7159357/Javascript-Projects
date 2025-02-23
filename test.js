@@ -1,12 +1,12 @@
-let a = "hello"
-let b = 3
-let c = a+b
-let d ="3"
-const obj = {
-    hi :8,
-    ft : 5,
+// let a = "hello"
+// let b = 3
+// let c = a+b
+// let d ="3"
+// const obj = {
+//     hi :8,
+//     ft : 5,
 
-}
+// }
 // console.log("b++",b++)
 // console.log("++b",++b)
 // console.log(b)
@@ -23,6 +23,26 @@ const obj = {
 // for(let i=0;i<a.length;i++){
 //     console.log(a[i]+" ")
 // }
-const random=(min,max)=>{
-    return Math.random*(max-min)+min
-}
+// const random=(min,max)=>{
+//     return Math.random*(max-min)+min
+// }
+
+// let a =(text)=>{
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve(text)
+//         },2000)
+//     })
+
+// }
+
+// (
+//     async()=>{
+//         let text  = await a("Hello")
+//         console.log(text)
+
+//     }
+// )()
+const a ="h",b='w'
+const obj1 ={a,b}
+console.log(obj1) 
